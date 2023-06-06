@@ -1,12 +1,12 @@
 # Camellia-Flower-Shop
 
 ## Team Members
-Ayham Bani Yasin
-Eman Whibi
-Sadrah Alsabagh
-Ayat Ayman
-Hadeel Abuzayed
-Osama Ghanrm
+Ayham Bani Yasin <br>
+Eman Whibi <br>
+Sadrah Alsabagh <br>
+Ayat Ayman <br>
+Hadeel Abuzayed <br>
+Osama Ghanrm <br>
 Maher Joudeh
 
 ## Summary of Idea
