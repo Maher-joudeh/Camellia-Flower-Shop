@@ -19,6 +19,9 @@ Our flower shop idea addresses the common challenge of finding a reliable and co
 ## Link of the website live URL:
 [Press here to go](https://attack-team.github.io/Camellia-Flower-Shop/)
 
+## Link of the design for our website:
+[Press here to go]([https://attack-team.github.io/Camellia-Flower-Shop/](https://www.figma.com/file/9xGjYVOhkq8tRN9ql4oMjL/attack-team?type=design&node-id=0%3A1&t=xv6yGQmMppWEVQ85-1))
+
 ## Wireframe:
 ### Home Page
 ![](Assets/flower%20shop%20(1).jpg)
