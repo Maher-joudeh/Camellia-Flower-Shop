@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;600;700&family=Sail&display=swap');
+
+* {
+    text-decoration: none;
+    font-family: 'Ruda', sans-serif;
+}
+
+body{
+    background-color:#F4EBE2 ;
+}
+header{
+    background-color:#F9DDDF ;
+    height: 100px;
+    width: 1587px;
+    margin-top: -8px;
+    margin-left: -50px;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    flex-wrap:inherit;
+    overflow: auto;
+
+   
+}
+header img{
+    height:361;
+    width: 381px;
+   margin-top: -10px;
+    margin-left: 90px;
+}
+p1{
+    font-size: 42px;
+    font-family: Ruda;
+    margin-left: 170px;
+    margin-top:-800px;
+    color: cadetblue;
+}
+p2{
+    font-size: 28px;
+    font-family: Ruda;
+    margin-left: 170px;
+    margin-top: -800;
+    color: black;
+}
+p3{
+    font-size: 32px;
+    font-family: Ruda;
+    margin-left: 170px;
+    margin-top: -800;
+    color: black;
+}
+ .img1{
+    width: 498px;
+    height: 798px;
+    margin-left: 820px;
+}
+.rec{
+    width: 498px;
+    height: 798px;
+    margin-left:160px;
+    margin-top: -798px;
+}
+.forms{
+    height:63px ;
+  
+    margin-left: 251px;
+    margin-top: -700px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+*{
+    margin-left: 10px;
+    box-sizing: border-box;
+}
+.nav a{
+  
+  padding: 10px;
+  text-decoration: none;
+  font-family: Ruda;
+  font-size: 20px;
+  color: black;
+  justify-items: center;
+  align-items: center;
+  margin-left: 90px;}
+  label{
+    font-size: 25px;
+  }
