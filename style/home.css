@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;600;700&family=Sail&display=swap');
+
+* {
+    text-decoration: none;
+    font-family: 'Ruda', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 600px;
+    background: url("/Assets/homeImages/hero.png");
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.img-logo {
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    top: -10px;
+    left: 50px;
+}
+
+.tabs {
+    position: absolute;
+    width: 629px;
+    height: 31px;
+    right: -10px;
+    top: 49px;
+}
+
+.tab {
+    padding-right: 50px;
+    color: black;
+}
+
+.hero-heading {
+    position: absolute;
+    left: 138px;
+    top: 115px;
+    font-family: 'Sail', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    color: #F6ECE0;
+}
+
+.hero-desc {
+    position: absolute;
+    left: 245px;
+    top: 200px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.4;
+    color: #ECEDE9;
+}
+
+.hero-desc2 {
+    position: absolute;
+    width: 340px;
+    height: 24px;
+    left: 244px;
+    top: 390px;
+    font-family: 'Ruda';
+    font-weight: 400;
+    font-size: 18px;
+    color: #ECEDE9;
+}
+
+.shop-btn {
+    position: absolute;
+    width: 140px;
+    height: 40px;
+    left: 244px;
+    top: 480px;
+    border-radius: 5px;
+    background: #838971;
+    color: #FFFFFF;
+    font-family: 'Ruda';
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+}

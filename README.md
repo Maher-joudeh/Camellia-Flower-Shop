@@ -23,20 +23,20 @@ Our flower shop idea addresses the common challenge of finding a reliable and co
 
 ## Wireframe:
 ### Home Page
-![](Assets/flower%20shop%20(1).jpg)
+![](Assets/wireframe/flower%20shop%20(1).jpg)
 <br><br>
 
 ### Occasions Page
-![](Assets/flower%20shop%20(2).jpg)
+![](Assets/wireframe/flower%20shop%20(2).jpg)
 <br><br>
 
 ### Shopping Page
-![](Assets/flower%20shop%20(3).jpg)
+![](Assets/wireframe/flower%20shop%20(3).jpg)
 <br><br>
 
 ### Cart Page
-![](Assets/flower%20shop%20(4).jpg)
+![](Assets/wireframe/flower%20shop%20(4).jpg)
 <br><br>
 
 ### Complaint Form Page
-![](Assets/flower%20shop%20(5).jpg)
+![](Assets/wireframe/flower%20shop%20(5).jpg)
