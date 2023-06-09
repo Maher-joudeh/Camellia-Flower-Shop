@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;600;700&family=Sail&display=swap');
+
+* {
+    text-decoration: none;
+    font-family: 'Ruda', sans-serif;
+}
+
+body{
+    background-color:#F4EBE2 ;
+}
+header{
+    background-color:#F9DDDF ;
+    height: 100px;
+    width: 1575px;
+    margin-top: -8px;
+    margin-left: -50px;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    flex-wrap:inherit;
+
+   
+}
+header img{
+    height:361;
+    width: 381px;
+   margin-top: -10px;
+    margin-left: 90px;
+}
+
+.nav a{
+  
+    padding: 10px;
+    text-decoration: none;
+    font-family: Ruda;
+    font-size: 20px;
+    color: black;
+    justify-items: center;
+    align-items: center;
+    margin-left: 90px;}
+    label{
+      font-size: 25px;
+}
+
+.img1{
+    width: 498px;
+    height: 798px;
+    margin-left: 820px;
+}
+
+main p1 {
+    position: absolute;
+width: 244px;
+height: 67px;
+left: 126px;
+top: 150px;
+
+font-family: 'Ruda';
+font-style: normal;
+font-weight: 400;
+font-size: 42px;
+line-height: 51px;
+
+color: rgba(0, 0, 0, 0.63);
+}
+
+main p2 {
+    position: absolute;
+width: 472px;
+height: 67px;
+left: 664px;
+top: 150px;
+
+font-family: 'Ruda';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+
+color: rgba(0, 0, 0, 0.63);
+}
+
+.card1 {
+    position: absolute;
+width: 286px;
+height: 40px;
+left: 77px;
+top: 237px;
+
+background: #FFFFFF;
+border-radius: 15px;
+}
+
+.card2 {
+    position: absolute;
+width: 286px;
+height: 340px;
+left: 77px;
+top: 295px;
+
+background: #FFFFFF;
+border-radius: 15px;
+}
+
+.card3 {
+    position: absolute;
+width: 238px;
+height: 52px;
+left: 25px;
+top: 15px;
+
+background: rgba(218, 218, 220, 0.41);
+border-radius: 10px;
+}
+
+.card4 {
+    position: absolute;
+width: 238px;
+height: 52px;
+left: 25px;
+top: 210px;
+
+background: rgba(218, 218, 220, 0.41);
+border-radius: 10px;
+}
+
+.card5 {
+    position: absolute;
+width: 238px;
+height: 52px;
+left: 25px;
+top: 80px;
+
+background: rgba(218, 218, 220, 0.41);
+border-radius: 10px;
+}
+
+.card6 {
+    position: absolute;
+width: 238px;
+height: 52px;
+left: 25px;
+top: 145px;
+
+background: rgba(218, 218, 220, 0.41);
+border-radius: 10px;
+}
+
+.card0 {
+    position: absolute;
+width: 238px;
+height: 52px;
+left: 25px;
+top: 275px;
+
+background: rgba(218, 218, 220, 0.41);
+border-radius: 10px;
+}
+
+main p3 {
+    position: absolute;
+width: 472px;
+height: 67px;
+left: 90px;
+top: 5px;
+
+font-family: 'Ruda';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+
+color: rgba(0, 0, 0, 0.63);
+}
+
+.input1 {
+    box-sizing: border-box;
+
+position: absolute;
+
+left: 5px;
+top: 15px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+width: 1.3em;
+height: 1.3em;
+background-color: white;
+border-radius: 50%;
+
+border: 1px solid #ddd;
+appearance: initial;
+}
+
+.input1:checked {
+        background-color: #F9DDDF;
+        
+    
+}
+
+.label1 {
+    position: absolute;
+width: 139px;
+height: 27px;
+left: 40px;
+top: 15px;
+
+font-family: 'Ruda';
+font-style: normal;
+font-weight: 400;
+font-size: 21px;
+line-height: 26px;
+
+color: rgba(0, 0, 0, 0.63);
+}
+
+.input2 {
+    box-sizing: border-box;
+
+position: absolute;
+
+left: 5px;
+top: 15px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+width: 1.3em;
+height: 1.3em;
+background-color: white;
+border-radius: 50%;
+
+border: 1px solid #ddd;
+appearance: initial;
+}
+
+.input2:checked {
+        background-color: #F9DDDF;
+        
+    
+}
+
+.label2 {
+    position: absolute;
+width: 139px;
+height: 27px;
+left: 40px;
+top: 15px;
+
+font-family: 'Ruda';
+font-style: normal;
+font-weight: 400;
+font-size: 21px;
+line-height: 26px;
+
+color: rgba(0, 0, 0, 0.63);
+}
+
+.input3 {
+    box-sizing: border-box;
+
+position: absolute;
+
+left: 5px;
+top: 15px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+width: 1.3em;
+height: 1.3em;
+background-color: white;
+border-radius: 50%;
+
+border: 1px solid #ddd;
+appearance: initial;
+}
+
+.input3:checked {
+        background-color: #F9DDDF;
+        
+    
+}
+
+.label3 {
+    position: absolute;
+width: 139px;
+height: 27px;
+left: 40px;
+top: 15px;
+
+font-family: 'Ruda';
+font-style: normal;
+font-weight: 400;
+font-size: 21px;
+line-height: 26px;
+
+color: rgba(0, 0, 0, 0.63);
+}
+
+.input4 {
+    box-sizing: border-box;
+
+position: absolute;
+
+left: 5px;
+top: 15px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+width: 1.3em;
+height: 1.3em;
+background-color: white;
+border-radius: 50%;
+
+border: 1px solid #ddd;
+appearance: initial;
+}
+
+.input4:checked {
+        background-color: #F9DDDF;
+        
+    
+}
+
+.label4 {
+    position: absolute;
+width: 139px;
+height: 27px;
+left: 40px;
+top: 15px;
+
+font-family: 'Ruda';
+font-style: normal;
+font-weight: 400;
+font-size: 21px;
+line-height: 26px;
+
+color: rgba(0, 0, 0, 0.63);
+}
+
+.input0 {
+    box-sizing: border-box;
+
+position: absolute;
+
+left: 5px;
+top: 15px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+width: 1.3em;
+height: 1.3em;
+background-color: white;
+border-radius: 50%;
+
+border: 1px solid #ddd;
+appearance: initial;
+}
+
+.input0:checked {
+        background-color: #F9DDDF;
+        
+    
+}
+
+.label0 {
+    position: absolute;
+width: 139px;
+height: 27px;
+left: 40px;
+top: 15px;
+
+font-family: 'Ruda';
+font-style: normal;
+font-weight: 400;
+font-size: 21px;
+line-height: 26px;
+
+color: rgba(0, 0, 0, 0.63);
+}

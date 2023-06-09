@@ -11,14 +11,13 @@ body{
 header{
     background-color:#F9DDDF ;
     height: 100px;
-    width: 1587px;
+    width: 1545px;
     margin-top: -8px;
     margin-left: -50px;
     justify-items: center;
     align-items: center;
     display: flex;
     flex-wrap:inherit;
-    overflow: auto;
 
    
 }
