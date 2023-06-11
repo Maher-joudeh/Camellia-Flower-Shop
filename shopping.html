@@ -1,25 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style/index.css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Camellia Flower Shop</title>
+  <script src="https://kit.fontawesome.com/f121993c04.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style/occasions.css" />
 </head>
-<body>
-<header>
 
-</header>
-<main>
+<body onload="filterSelection('all')">
+  <header>
+    <div class="logo" id="img1">
+      <img src="https://www3.0zz0.com/2023/06/07/21/466501860.png" />
+    </div>
+    <div class="nav">
+      <a href="./index.html"> Home </a>
+      <a href="./shopping.html">Shopping</a>
+      <a href="./occasions.html">Occasion</a>
+      <a href="./complaintform.html">Contact</a>
+      <a href="./cart.html">Cart <i class="fa-solid fa-cart-shopping"></i></a>
+    </div>
+  </header>
+  <main>
+    <div class="main-container">
+      <div class="left-container">
+        <h1>Occasions</h1>
+        <p>Categories</p>
+        <div class="filters-card">
+          <form action="">
+            <div class="filter" onclick="filterSelection('all')">
+              <input class="filter-input" type="radio" id="All" name="Checked" />
+              <label class="filter-label" for="All">All</label><br />
+            </div>
+            <div class="filter" onclick="filterSelection('birthday')">
+              <input class="filter-input" type="radio" id="Birthday" name="Checked" />
+              <label class="filter-label" for="Birthday">Birthday</label><br />
+            </div>
+            <div class="filter" onclick="filterSelection('wedding')">
+              <input class="filter-input" type="radio" id="Wedding" name="Checked" />
+              <label class="filter-label" for="Wedding">Wedding</label><br />
+            </div>
+            <div class="filter" onclick="filterSelection('graduation')">
+              <input class="filter-input" type="radio" id="Graduation" name="Checked" />
+              <label class="filter-label" for="Graduation">Graduation</label><br />
+            </div>
+            <div class="filter" onclick="filterSelection('babyshower')">
+              <input class="filter-input" type="radio" id="Babyshower" name="Checked" />
+              <label class="filter-label" for="Babyshower">Babyshower</label><br />
+            </div>
+          </form>
+        </div>
+      </div>
 
-</main>
-<footer>
-
-</footer>
+      <div class="right-container">
+        <p>Shop by occasions, send flowers and gifts</p>
+        <div class="cards-container" id="cardsContainer">
+          <form id="form1">
+            <div class="flower-card" type="birthday">
+              <img class="cardImg" src="/Assets/occasionsImages/Occasion1.jpg" alt="flower" />
+              <div>
+                <div class="title">The flower of love</div>
+                <div class="description">
+                  This elegant flower, devoid of pigmentation and bathed.
+                </div>
+                <div class="price">50 JD</div>
+              </div>
+              <button type="submit">Add to cart</button>
+            </div>
+          </form>
+          <form id="form2">
+          <div class="flower-card" type="birthday">
+            <img class="cardImg" src="/Assets/occasionsImages/Occasion2.jpg" alt="flower" />
+            <div>
+              <div class="title">The flower of love</div>
+              <div class="description">
+                This elegant flower, devoid of pigmentation and bathed.
+              </div>
+              <div class="price">50 JD</div>
+            </div>
+            <button type="submit">Add to cart</button>
+          </div>
+        </form>
+        <form id="form3">
+          <div class="flower-card" type="graduation">
+            <img class="cardImg" src="/Assets/occasionsImages/Occasion3.jpg" alt="flower" />
+            <div>
+              <div class="title">The flower of love</div>
+              <div class="description">
+                This elegant flower, devoid of pigmentation and bathed.
+              </div>
+              <div class="price">50 JD</div>
+            </div>
+            <button type="submit">Add to cart</button>
+          </div>
+        </form>
+          <form id="form4">
+          <div class="flower-card" type="graduation">
+            <img class="cardImg" src="/Assets/occasionsImages/Occasion4.jpg" alt="flower" />
+            <div>
+              <div class="title">The flower of love</div>
+              <div class="description">
+                This elegant flower, devoid of pigmentation and bathed.
+              </div>
+              <div class="price">50 JD</div>
+            </div>
+            <button type="submit">Add to cart</button>
+          </div>
+        </form>
+          <form id="form5">
+          <div class="flower-card" type="birthday">
+            <img class="cardImg" src="/Assets/occasionsImages/Occasion5.jpg" alt="flower" />
+            <div>
+              <div class="title">The flower of love</div>
+              <div class="description">
+                This elegant flower, devoid of pigmentation and bathed.
+              </div>
+              <div class="price">50 JD</div>
+            </div>
+            <button type="submit">Add to cart</button>
+          </div>
+        </form>
+          <form id="form6">
+          <div class="flower-card" type="birthday">
+            <img class="cardImg" src="/Assets/occasionsImages/Occasion6.jpg" alt="flower" />
+            <div>
+              <div class="title">The flower of love</div>
+              <div class="description">
+                This elegant flower, devoid of pigmentation and bathed.
+              </div>
+              <div class="price">50 JD</div>
+            </div>
+            <button type="submit">Add to cart</button>
+          </div>
+        </form>
+          <form id="form7">
+          <div class="flower-card" type="birthday">
+            <img class="cardImg" src="/Assets/occasionsImages/Occasion7.jpg" alt="flower" />
+            <div>
+              <div class="title">The flower of love</div>
+              <div class="description">
+                This elegant flower, devoid of pigmentation and bathed.
+              </div>
+              <div class="price">50 JD</div>
+            </div>
+            <button type="submit">Add to cart</button>
+          </div>
+        </form>
+          <form id="form8">
+          <div class="flower-card birthday" type="birthday">
+            <img class="cardImg" src="/Assets/occasionsImages/Occasion8.jpg" alt="flower" />
+            <div>
+              <div class="title">The flower of love</div>
+              <div class="description">
+                This elegant flower, devoid of pigmentation and bathed.
+              </div>
+              <div class="price">50 JD</div>
+            </div>
+            <button type="submit">Add to cart</button>
+          </div>
+        </form>
+          <form id="form9">
+          <div class="flower-card birthday" type="birthday">
+            <img class="cardImg" src="/Assets/occasionsImages/Occasion9.jpg" alt="flower" />
+            <div>
+              <div class="title">The flower of love</div>
+              <div class="description">
+                This elegant flower, devoid of pigmentation and bathed.
+              </div>
+              <div class="price">50 JD</div>
+            </div>
+            <button type="submit">Add to cart</button>
+          </div>
+        </form>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer></footer>
+  <script src="JS/app.js"></script>
 </body>
+
 </html>

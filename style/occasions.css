@@ -7,39 +7,40 @@
 
 body{
     background-color:#F4EBE2 ;
+    margin: 0;
+    padding: 0;
 }
+
 header{
     background-color:#F9DDDF ;
     height: 100px;
-    width: 1575px;
-    margin-top: -8px;
-    margin-left: -50px;
+    width: 100%;
     justify-items: center;
     align-items: center;
     display: flex;
-    flex-wrap:inherit;
+    padding-block: 10px;  
+}
 
-   
-}
 header img{
-    height:361;
-    width: 381px;
-   margin-top: -10px;
-    margin-left: 90px;
+    max-width: 400px;
 }
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;}
 
 .nav a{
-  
     padding: 10px;
     text-decoration: none;
-    font-family: Ruda;
     font-size: 20px;
     color: black;
     justify-items: center;
     align-items: center;
-    margin-left: 90px;}
-    label{
-      font-size: 25px;
+}
+
+label{
+  font-size: 25px;
 }
 
 .img1{
@@ -48,332 +49,118 @@ header img{
     margin-left: 820px;
 }
 
-main p1 {
-    position: absolute;
-width: 244px;
-height: 67px;
-left: 126px;
-top: 150px;
+/* MAIN PAGE CONTAINER */
 
-font-family: 'Ruda';
-font-style: normal;
-font-weight: 400;
-font-size: 42px;
-line-height: 51px;
-
-color: rgba(0, 0, 0, 0.63);
+.main-container{
+    display: flex;
 }
 
-main p2 {
-    position: absolute;
-width: 472px;
-height: 67px;
-left: 664px;
-top: 150px;
+/* LEFT CONTAINER */
 
-font-family: 'Ruda';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 29px;
-
-color: rgba(0, 0, 0, 0.63);
+.left-container{
+    width: 30%;
+    padding-inline: 35px;
 }
 
-.card1 {
-    position: absolute;
-width: 286px;
-height: 40px;
-left: 77px;
-top: 237px;
-
-background: #FFFFFF;
-border-radius: 15px;
+.left-container h1{
+    font-weight: 400;
+    font-size: 42px;
+    color: rgba(0, 0, 0, 0.63);
+    padding-block: 50px;
+    margin: 0;
+    text-align: center;
 }
 
-.card2 {
-    position: absolute;
-width: 286px;
-height: 340px;
-left: 77px;
-top: 295px;
-
-background: #FFFFFF;
-border-radius: 15px;
+.left-container p{
+    font-weight: 400;
+    font-size: 24px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0 0 30px 0;
+    color: rgba(0, 0, 0, 0.63);
+    text-align: center;
+    padding-block: 5px;
 }
 
-.card3 {
-    position: absolute;
-width: 238px;
-height: 52px;
-left: 25px;
-top: 15px;
-
-background: rgba(218, 218, 220, 0.41);
-border-radius: 10px;
+.filters-card{
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
 }
 
-.card4 {
-    position: absolute;
-width: 238px;
-height: 52px;
-left: 25px;
-top: 210px;
-
-background: rgba(218, 218, 220, 0.41);
-border-radius: 10px;
+.filters-card form{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
-.card5 {
-    position: absolute;
-width: 238px;
-height: 52px;
-left: 25px;
-top: 80px;
-
-background: rgba(218, 218, 220, 0.41);
-border-radius: 10px;
+.filters-card .filter{
+    background: rgba(218, 218, 220, 0.41);
+    border-radius: 10px;
+    padding: 10px;
 }
 
-.card6 {
-    position: absolute;
-width: 238px;
-height: 52px;
-left: 25px;
-top: 145px;
+/* RIGHT CONTAINER */
 
-background: rgba(218, 218, 220, 0.41);
-border-radius: 10px;
+.right-container{
+    width: 70%;
+    padding-inline-end: 50px;
+    margin: 0;
 }
 
-.card0 {
-    position: absolute;
-width: 238px;
-height: 52px;
-left: 25px;
-top: 275px;
-
-background: rgba(218, 218, 220, 0.41);
-border-radius: 10px;
+.right-container p{
+    font-weight: 400;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.63);
+    text-align: center;
+    width: 100%;
+    display: block;
+    padding-block: 60px;
+    margin: 0;
 }
 
-main p3 {
-    position: absolute;
-width: 472px;
-height: 67px;
-left: 90px;
-top: 5px;
-
-font-family: 'Ruda';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 29px;
-
-color: rgba(0, 0, 0, 0.63);
+.cards-container{
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding-inline-start: 20px;
 }
 
-.input1 {
-    box-sizing: border-box;
-
-position: absolute;
-
-left: 5px;
-top: 15px;
-
-background: #FFFFFF;
-border: 1px solid #000000;
-width: 1.3em;
-height: 1.3em;
-background-color: white;
-border-radius: 50%;
-
-border: 1px solid #ddd;
-appearance: initial;
+.flower-card{
+    display: none;
+    background-color: white;
+    border-radius: 50px;
+    text-align: center;
+    padding-bottom: 25px;
+    max-width: 250px;
+    box-shadow: 0px 0px 30px #00000033;
+    margin-bottom: 50px;
 }
 
-.input1:checked {
-        background-color: #F9DDDF;
-        
-    
+.flower-card.show{
+    display: block;
 }
 
-.label1 {
-    position: absolute;
-width: 139px;
-height: 27px;
-left: 40px;
-top: 15px;
-
-font-family: 'Ruda';
-font-style: normal;
-font-weight: 400;
-font-size: 21px;
-line-height: 26px;
-
-color: rgba(0, 0, 0, 0.63);
+.flower-card .cardImg{
+    width: 250px;
+    height: 250px;
+    border-radius: 50px 50px 0px 0px;
 }
 
-.input2 {
-    box-sizing: border-box;
-
-position: absolute;
-
-left: 5px;
-top: 15px;
-
-background: #FFFFFF;
-border: 1px solid #000000;
-width: 1.3em;
-height: 1.3em;
-background-color: white;
-border-radius: 50%;
-
-border: 1px solid #ddd;
-appearance: initial;
+.flower-card .title , .flower-card .price{
+    color: red;
 }
 
-.input2:checked {
-        background-color: #F9DDDF;
-        
-    
+.flower-card button{
+    background: #667055;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    padding: 10px; 
+    margin-top: 10px;   
 }
 
-.label2 {
-    position: absolute;
-width: 139px;
-height: 27px;
-left: 40px;
-top: 15px;
-
-font-family: 'Ruda';
-font-style: normal;
-font-weight: 400;
-font-size: 21px;
-line-height: 26px;
-
-color: rgba(0, 0, 0, 0.63);
-}
-
-.input3 {
-    box-sizing: border-box;
-
-position: absolute;
-
-left: 5px;
-top: 15px;
-
-background: #FFFFFF;
-border: 1px solid #000000;
-width: 1.3em;
-height: 1.3em;
-background-color: white;
-border-radius: 50%;
-
-border: 1px solid #ddd;
-appearance: initial;
-}
-
-.input3:checked {
-        background-color: #F9DDDF;
-        
-    
-}
-
-.label3 {
-    position: absolute;
-width: 139px;
-height: 27px;
-left: 40px;
-top: 15px;
-
-font-family: 'Ruda';
-font-style: normal;
-font-weight: 400;
-font-size: 21px;
-line-height: 26px;
-
-color: rgba(0, 0, 0, 0.63);
-}
-
-.input4 {
-    box-sizing: border-box;
-
-position: absolute;
-
-left: 5px;
-top: 15px;
-
-background: #FFFFFF;
-border: 1px solid #000000;
-width: 1.3em;
-height: 1.3em;
-background-color: white;
-border-radius: 50%;
-
-border: 1px solid #ddd;
-appearance: initial;
-}
-
-.input4:checked {
-        background-color: #F9DDDF;
-        
-    
-}
-
-.label4 {
-    position: absolute;
-width: 139px;
-height: 27px;
-left: 40px;
-top: 15px;
-
-font-family: 'Ruda';
-font-style: normal;
-font-weight: 400;
-font-size: 21px;
-line-height: 26px;
-
-color: rgba(0, 0, 0, 0.63);
-}
-
-.input0 {
-    box-sizing: border-box;
-
-position: absolute;
-
-left: 5px;
-top: 15px;
-
-background: #FFFFFF;
-border: 1px solid #000000;
-width: 1.3em;
-height: 1.3em;
-background-color: white;
-border-radius: 50%;
-
-border: 1px solid #ddd;
-appearance: initial;
-}
-
-.input0:checked {
-        background-color: #F9DDDF;
-        
-    
-}
-
-.label0 {
-    position: absolute;
-width: 139px;
-height: 27px;
-left: 40px;
-top: 15px;
-
-font-family: 'Ruda';
-font-style: normal;
-font-weight: 400;
-font-size: 21px;
-line-height: 26px;
-
-color: rgba(0, 0, 0, 0.63);
-}
+.flower-card button:hover {
+    background-color: #F9DDDF; /* Green */
+    color: black;
+  }
