@@ -29,7 +29,16 @@ for ( var i = 0; i < cards.length; i++) {
 }
 }
 
-const bouquetArray = [];
+let bouquetArray = [];
+let jsonArray = window.localStorage.getItem("product");
+let oldCheckArray = JSON.parse(jsonArray);
+
+if (oldCheckArray != null) {
+  
+  bouquetArray = oldCheckArray
+  
+}
+
 
 function bouquet(Name, description, price, image,  id) {
     this.id = id;
@@ -44,15 +53,6 @@ function bouquet(Name, description, price, image,  id) {
 
 let bouquets = document.getElementById('cardsContainer');
 
-function render() {
-
-  bouquets.innerHTML = '';
-
-
-}
-
-
-
 let i1 = 0;
 let i2 = 0;
 let i3 = 0;
@@ -62,24 +62,34 @@ let i6 = 0;
 let i7 = 0;
 let i8 = 0;
 let i9 = 0;
+
+
+
+
+
 let saveValues1 = document.getElementById('form1');
 saveValues1.addEventListener('submit', handler1)
 
 function handler1(e) {
   e.preventDefault();
 if (i1 == 0) {
-  new bouquet("Birthday", "A New Day", 50, "Assets/occasionsImages/Occasion7.jpg", "This elegant flower, devoid of pigmentation and bathed",  );
+  new bouquet("Bed of Roses", "This tied bouquet has 15 purple roses", 50, "Assets/occasionsImages/Occasion1.jpg", "Birthday" );
   console.log(bouquetArray);
   storeIntoLocalStorage();
   i1++;
 }
 };
 
-function storeIntoLocalStorage() {
-  let jsonObjArray = JSON.stringify(bouquetArray);
-  window.localStorage.setItem("product", jsonObjArray);
-}
 
+
+function storeIntoLocalStorage() {
+  // let x = window.localStorage.getItem("product");
+  
+  // console.log(x);
+  
+  let jsonObjArray = JSON.stringify(bouquetArray);
+window.localStorage.setItem("product", jsonObjArray);
+}
 
 let saveValues2 = document.getElementById('form2');
 saveValues2.addEventListener('submit', handler2)
@@ -87,17 +97,13 @@ saveValues2.addEventListener('submit', handler2)
 function handler2(e) {
   e.preventDefault();
   if (i2 == 0) {
-    new bouquet("Birthday", "A New Day", 50, "Assets/occasionsImages/Occasion7.jpg", "This elegant flower, devoid of pigmentation and bathed",  );
+    new bouquet("The flower of love", "This elegant flower, devoid of pigmentation and bathed", 50, "Assets/occasionsImages/Occasion2.jpg", "Birthday");
     console.log(bouquetArray);
     storeIntoLocalStorage();
     i2++;
   }
 };
 
-function storeIntoLocalStorage() {
-  let jsonObjArray = JSON.stringify(bouquetArray);
-  window.localStorage.setItem("product", jsonObjArray);
-}
 
 let saveValues3 = document.getElementById('form3');
 saveValues3.addEventListener('submit', handler3)
@@ -105,17 +111,13 @@ saveValues3.addEventListener('submit', handler3)
 function handler3(e) {
   e.preventDefault();
   if (i3 == 0) {
-    new bouquet("Birthday", "A New Day", 50, "Assets/occasionsImages/Occasion7.jpg", "This elegant flower, devoid of pigmentation and bathed",  );
+    new bouquet("Royal Scents Roses Arrangement", "Flowers can say it all when you are speechless.", 50, "Assets/occasionsImages/Occasion3.jpg", "Birthday");
     console.log(bouquetArray);
     storeIntoLocalStorage();
     i3++;
   }
 };
 
-function storeIntoLocalStorage() {
-  let jsonObjArray = JSON.stringify(bouquetArray);
-  window.localStorage.setItem("product", jsonObjArray);
-}
 
 let saveValues4 = document.getElementById('form4');
 saveValues4.addEventListener('submit', handler4)
@@ -123,17 +125,13 @@ saveValues4.addEventListener('submit', handler4)
 function handler4(e) {
   e.preventDefault();
   if (i4 == 0) {
-    new bouquet("Birthday", "A New Day", 50, "Assets/occasionsImages/Occasion7.jpg", "This elegant flower, devoid of pigmentation and bathed",  );
+    new bouquet("Pink Oriental Blooms", "Pink Oriental Blooms Bouquet to someone special and give them an eye-catching.", 50, "Assets/occasionsImages/Occasion4.jpg", "Birthday");
     console.log(bouquetArray);
     storeIntoLocalStorage();
     i4++;
   }
 };
 
-function storeIntoLocalStorage() {
-  let jsonObjArray = JSON.stringify(bouquetArray);
-  window.localStorage.setItem("product", jsonObjArray);
-}
 
 let saveValues5 = document.getElementById('form5');
 saveValues5.addEventListener('submit', handler5)
@@ -141,17 +139,13 @@ saveValues5.addEventListener('submit', handler5)
 function handler5(e) {
   e.preventDefault();
   if (i5 == 0) {
-    new bouquet("Birthday", "A New Day", 50, "Assets/occasionsImages/Occasion7.jpg", "This elegant flower, devoid of pigmentation and bathed",  );
+    new bouquet("The Magician Flower", "The Magician Flower Bouquet is a beautiful bright gift that will make their heart skip a beat!.", 50, "Assets/occasionsImages/Occasion5.jpg", "Birthday");
     console.log(bouquetArray);
     storeIntoLocalStorage();
     i5++;
   }
 };
 
-function storeIntoLocalStorage() {
-  let jsonObjArray = JSON.stringify(bouquetArray);
-  window.localStorage.setItem("product", jsonObjArray);
-}
 
 let saveValues6 = document.getElementById('form6');
 saveValues6.addEventListener('submit', handler6)
@@ -159,17 +153,13 @@ saveValues6.addEventListener('submit', handler6)
 function handler6(e) {
   e.preventDefault();
   if (i6 == 0) {
-    new bouquet("Birthday", "A New Day", 50, "Assets/occasionsImages/Occasion7.jpg", "This elegant flower, devoid of pigmentation and bathed",  );
+    new bouquet("12 Red Roses Romantic Bouquet", "This bouquet is perfect for an anniversary, or just to show how much you love them!", 50, "Assets/occasionsImages/Occasion6.jpg", "Birthday");
     console.log(bouquetArray);
     storeIntoLocalStorage();
     i6++;
   }
 };
 
-function storeIntoLocalStorage() {
-  let jsonObjArray = JSON.stringify(bouquetArray);
-  window.localStorage.setItem("product", jsonObjArray);
-}
 
 let saveValues7 = document.getElementById('form7');
 saveValues7.addEventListener('submit', handler7)
@@ -177,17 +167,13 @@ saveValues7.addEventListener('submit', handler7)
 function handler7(e) {
   e.preventDefault();
   if (i7 == 0) {
-    new bouquet("Birthday", "A New Day", 50, "Assets/occasionsImages/Occasion7.jpg", "This elegant flower, devoid of pigmentation and bathed",  );
+    new bouquet("The Powerful One", "A gorgeous bouquet of flowers including spray roses.", 50, "Assets/occasionsImages/Occasion7.jpg", "Birthday");
     console.log(bouquetArray);
     storeIntoLocalStorage();
     i7++;
   }
 };
 
-function storeIntoLocalStorage() {
-  let jsonObjArray = JSON.stringify(bouquetArray);
-  window.localStorage.setItem("product", jsonObjArray);
-}
 
 let saveValues8 = document.getElementById('form8');
 saveValues8.addEventListener('submit', handler8)
@@ -195,17 +181,13 @@ saveValues8.addEventListener('submit', handler8)
 function handler8(e) {
   e.preventDefault();
   if (i8 == 0) {
-    new bouquet("Birthday", "A New Day", 50, "Assets/occasionsImages/Occasion7.jpg", "This elegant flower, devoid of pigmentation and bathed",  );
+    new bouquet("Amour Flowers Bouquet", "A stunning bouquet of flowers! it is the best gift for all occasions.", 50, "Assets/occasionsImages/Occasion8.jpg", "Birthday");
     console.log(bouquetArray);
     storeIntoLocalStorage();
     i8++;
   }
 };
 
-function storeIntoLocalStorage() {
-  let jsonObjArray = JSON.stringify(bouquetArray);
-  window.localStorage.setItem("product", jsonObjArray);
-}
 
 let saveValues9 = document.getElementById('form9');
 saveValues9.addEventListener('submit', handler9)
@@ -213,17 +195,14 @@ saveValues9.addEventListener('submit', handler9)
 function handler9(e) {
   e.preventDefault();
   if (i9 == 0) {
-    new bouquet("Birthday", "A New Day", 50, "Assets/occasionsImages/Occasion7.jpg", "This elegant flower, devoid of pigmentation and bathed",  );
+    new bouquet("The White Fantasy", "This elegant flower, 6 white roses and gypsophila.", 50, "Assets/occasionsImages/Occasion9.jpg", "Birthday");
     console.log(bouquetArray);
     storeIntoLocalStorage();
     i9++;
   }
 };
 
-function storeIntoLocalStorage() {
-  let jsonObjArray = JSON.stringify(bouquetArray);
-  window.localStorage.setItem("product", jsonObjArray);
-}
+
 
 
 

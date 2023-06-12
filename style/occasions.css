@@ -13,12 +13,11 @@ body{
 
 header{
     background-color:#F9DDDF ;
-    height: 100px;
     width: 100%;
     justify-items: center;
     align-items: center;
     display: flex;
-    padding-block: 10px;  
+    
 }
 
 header img{
@@ -104,7 +103,7 @@ label{
 
 .right-container{
     width: 70%;
-    padding-inline-end: 50px;
+    
     margin: 0;
 }
 
@@ -121,7 +120,7 @@ label{
 
 .cards-container{
     display: flex;
-    gap: 40px;
+    gap: 90px;
     flex-wrap: wrap;
     padding-inline-start: 20px;
 }
@@ -164,3 +163,96 @@ label{
     background-color: #F9DDDF; /* Green */
     color: black;
   }
+
+  /* footer */
+footer {
+    background-color: #838971;
+    width: 1539px;
+    margin-left: -20px;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: inherit;
+    overflow: auto;
+    justify-items: center;
+    align-items: center;
+}
+
+footer p {
+    margin-left: 150px;
+    font-family: Roboto;
+    font-size: 19px;
+}
+
+footer p2 {
+    margin-left: 230px;
+    font-family: Roboto;
+    font-size: 19px;
+    margin-bottom: -50px;
+}
+
+.social-media {
+    margin-top: 0px;
+    margin-left: 300px;
+}
+
+.social-media i {
+    font-size: 29px;
+    margin: 10px;
+    cursor: pointer;
+    color: rgb(228, 239, 249);
+}
+
+.social-media i:hover {
+    transform: translate(0, -10px);
+}
+
+.social-media:nth-child(1) i:hover {
+    background-color: #D0627F;
+}
+
+.social-media:nth-child(2) i:hover {
+    background-color: #D0627F;
+}
+
+.social-media:nth-child(3) i:hover {
+    background-color: #D0627F;
+}
+
+.social-media:nth-child(4) i:hover {
+    background-color: #D0627F;
+}
+
+.img-logo {
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    top: -25px;
+    left: 50px;
+}
+
+.tabs {
+    position: absolute;
+    width: 629px;
+    height: 31px;
+    right: 10px;
+    top: 40px;
+}
+
+.tab {
+    padding-right: 50px;
+    color: black;
+    text-decoration: none;
+}
+
+.navbar .tabs a:hover {
+    text-transform: uppercase;
+    color: white;
+}
+
+.navbar {
+    background-color: #F9DDDF;
+    height: 90px;
+    margin-top: -7px;
+    overflow-y: unset;
+}

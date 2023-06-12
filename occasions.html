@@ -8,22 +8,28 @@
   <title>Camellia Flower Shop</title>
   <script src="https://kit.fontawesome.com/f121993c04.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style/shopping.css" />
+  <link rel="stylesheet" href="style/occasions.css" />
 </head>
 
 <body onload="filterSelection('all')">
   <header>
-    <div class="logo" id="img1">
-      <img src="https://www3.0zz0.com/2023/06/07/21/466501860.png" />
-    </div>
-    <div class="nav">
-      <a href="./index.html"> Home </a>
-      <a href="./shopping.html">Shopping</a>
-      <a href="./occasions.html">Occasion</a>
-      <a href="./complaintform.html">Contact</a>
-      <a href="./cart.html">Cart <i class="fa-solid fa-cart-shopping"></i></a>
-    </div>
-  </header>
+    <div class="container">
+        <!-- Navbar -->
+        <div class="navbar">
+            <div class="logo">
+                <img src="Assets/homeImages/logo.png" alt="logo" class="img-logo">
+            </div>
+            <div class="tabs">
+                <a href="./index.html" class="tab">Home</a>
+                <a href="./shopping.html" class="tab">Shopping</a>
+                <a href="./occasions.html" class="tab">Ocassions</a>
+                <a href="./complaintform.html" class="tab">Contact</a>
+                <a href="./cart.html" class="tab">Cart
+                    <i class="fa-solid fa-cart-shopping" style="color: #1F2321;"></i>
+                </a>
+            </div>
+        </div>
+</header>
   <main>
     <div class="main-container">
       <div class="left-container">
@@ -59,8 +65,21 @@
         <p>Shop by occasions, send flowers and gifts</p>
         <div class="cards-container" id="cardsContainer">
           <form id="form1">
-            <div class="flower-card" type="birthday">
-              <img class="cardImg" src="/Assets/occasionsImages/Occasion1.jpg" alt="flower" />
+            <div class="flower-card babyshower" type="birthday">
+              <img class="cardImg" src="Assets/occasionsImages/Occasion1.jpg" alt="flower" />
+              <div>
+                <div class="title">Bed of Roses</div>
+                <div class="description">
+                  This tied bouquet has 15 purple roses
+                </div>
+                <div class="price">50 JD</div>
+              </div>
+              <button type="submit">Add to cart</button>
+            </div>
+          </form>
+          <form id="form2">
+            <div class="flower-card graduation" type="birthday">
+              <img class="cardImg" src="Assets/occasionsImages/Occasion2.jpg" alt="flower" />
               <div>
                 <div class="title">The flower of love</div>
                 <div class="description">
@@ -71,115 +90,117 @@
               <button type="submit">Add to cart</button>
             </div>
           </form>
-          <form id="form2">
-          <div class="flower-card" type="birthday">
-            <img class="cardImg" src="/Assets/occasionsImages/Occasion2.jpg" alt="flower" />
-            <div>
-              <div class="title">The flower of love</div>
-              <div class="description">
-                This elegant flower, devoid of pigmentation and bathed.
+          <form id="form3">
+            <div class="flower-card graduation" type="graduation">
+              <img class="cardImg" src="Assets/occasionsImages/Occasion3.jpg" alt="flower" />
+              <div>
+                <div class="title">Royal Scents Roses Arrangement</div>
+                <div class="description">
+                  Flowers can say it all when you are speechless.
+                </div>
+                <div class="price">50 JD</div>
               </div>
-              <div class="price">50 JD</div>
+              <button type="submit">Add to cart</button>
             </div>
-            <button type="submit">Add to cart</button>
-          </div>
-        </form>
-        <form id="form3">
-          <div class="flower-card" type="graduation">
-            <img class="cardImg" src="/Assets/occasionsImages/Occasion3.jpg" alt="flower" />
-            <div>
-              <div class="title">The flower of love</div>
-              <div class="description">
-                This elegant flower, devoid of pigmentation and bathed.
-              </div>
-              <div class="price">50 JD</div>
-            </div>
-            <button type="submit">Add to cart</button>
-          </div>
-        </form>
+          </form>
           <form id="form4">
-          <div class="flower-card" type="graduation">
-            <img class="cardImg" src="/Assets/occasionsImages/Occasion4.jpg" alt="flower" />
-            <div>
-              <div class="title">The flower of love</div>
-              <div class="description">
-                This elegant flower, devoid of pigmentation and bathed.
+            <div class="flower-card babyshower" type="graduation">
+              <img class="cardImg" src="Assets/occasionsImages/Occasion4.jpg" alt="flower" />
+              <div>
+                <div class="title">Pink Oriental Blooms</div>
+                <div class="description">
+                  Pink Oriental Blooms Bouquet to someone special and give them an eye-catching.
+                </div>
+                <div class="price">50 JD</div>
               </div>
-              <div class="price">50 JD</div>
+              <button type="submit">Add to cart</button>
             </div>
-            <button type="submit">Add to cart</button>
-          </div>
-        </form>
+          </form>
           <form id="form5">
-          <div class="flower-card" type="birthday">
-            <img class="cardImg" src="/Assets/occasionsImages/Occasion5.jpg" alt="flower" />
-            <div>
-              <div class="title">The flower of love</div>
-              <div class="description">
-                This elegant flower, devoid of pigmentation and bathed.
+            <div class="flower-card" type="birthday">
+              <img class="cardImg" src="Assets/occasionsImages/Occasion5.jpg" alt="flower" />
+              <div>
+                <div class="title">The Magician Flower</div>
+                <div class="description">
+                  The Magician Flower Bouquet is a beautiful bright gift that will make their heart skip a beat!.
+                </div>
+                <div class="price">50 JD</div>
               </div>
-              <div class="price">50 JD</div>
+              <button type="submit">Add to cart</button>
             </div>
-            <button type="submit">Add to cart</button>
-          </div>
-        </form>
+          </form>
           <form id="form6">
-          <div class="flower-card" type="birthday">
-            <img class="cardImg" src="/Assets/occasionsImages/Occasion6.jpg" alt="flower" />
-            <div>
-              <div class="title">The flower of love</div>
-              <div class="description">
-                This elegant flower, devoid of pigmentation and bathed.
+            <div class="flower-card wedding" type="birthday">
+              <img class="cardImg" src="Assets/occasionsImages/Occasion6.jpg" alt="flower" />
+              <div>
+                <div class="title">12 Red Roses Romantic Bouquet</div>
+                <div class="description">
+                  This bouquet is perfect for an anniversary, or just to show how much you love them!
+                </div>
+                <div class="price">50 JD</div>
               </div>
-              <div class="price">50 JD</div>
+              <button type="submit">Add to cart</button>
             </div>
-            <button type="submit">Add to cart</button>
-          </div>
-        </form>
+          </form>
           <form id="form7">
-          <div class="flower-card" type="birthday">
-            <img class="cardImg" src="/Assets/occasionsImages/Occasion7.jpg" alt="flower" />
-            <div>
-              <div class="title">The flower of love</div>
-              <div class="description">
-                This elegant flower, devoid of pigmentation and bathed.
+            <div class="flower-card wedding" type="birthday">
+              <img class="cardImg" src="Assets/occasionsImages/Occasion7.jpg" alt="flower" />
+              <div>
+                <div class="title">The Powerful One</div>
+                <div class="description">
+                  A gorgeous bouquet of flowers including spray roses.
+                </div>
+                <div class="price">50 JD</div>
               </div>
-              <div class="price">50 JD</div>
+              <button type="submit">Add to cart</button>
             </div>
-            <button type="submit">Add to cart</button>
-          </div>
-        </form>
+          </form>
           <form id="form8">
-          <div class="flower-card birthday" type="birthday">
-            <img class="cardImg" src="/Assets/occasionsImages/Occasion8.jpg" alt="flower" />
-            <div>
-              <div class="title">The flower of love</div>
-              <div class="description">
-                This elegant flower, devoid of pigmentation and bathed.
+            <div class="flower-card birthday" type="birthday">
+              <img class="cardImg" src="Assets/occasionsImages/Occasion8.jpg" alt="flower" />
+              <div>
+                <div class="title">Amour Flowers Bouquet</div>
+                <div class="description">
+                  A stunning bouquet of flowers! it is the best gift
+                  for all occasions.
+                </div>
+                <div class="price">50 JD</div>
               </div>
-              <div class="price">50 JD</div>
+              <button type="submit">Add to cart</button>
             </div>
-            <button type="submit">Add to cart</button>
-          </div>
-        </form>
+          </form>
           <form id="form9">
-          <div class="flower-card birthday" type="birthday">
-            <img class="cardImg" src="/Assets/occasionsImages/Occasion9.jpg" alt="flower" />
-            <div>
-              <div class="title">The flower of love</div>
-              <div class="description">
-                This elegant flower, devoid of pigmentation and bathed.
+            <div class="flower-card birthday" type="birthday">
+              <img class="cardImg" src="Assets/occasionsImages/Occasion9.jpg" alt="flower" />
+              <div>
+                <div class="title">The White Fantasy</div>
+                <div class="description">
+                  This elegant flower, 6 white roses and gypsophila.
+                </div>
+                <div class="price">50 JD</div>
               </div>
-              <div class="price">50 JD</div>
+              <button type="submit">Add to cart</button>
             </div>
-            <button type="submit">Add to cart</button>
-          </div>
-        </form>
+          </form>
         </div>
       </div>
     </div>
   </main>
-  <footer></footer>
+  <footer>
+    <p>Privany Policy<br>
+      Terms & Conditions <br>
+      Amman-Jordan/Abdoun</p>
+    <p2>Camelliashop 2023 &copy All Rights Reserver</p2>
+    <div class="social-media">
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-linkedin"></i>
+      <i class="fa-brands fa-whatsapp"></i> <br>
+      <i class="fa-brands fa-cc-visa"></i>
+      <i class="fa-brands fa-cc-mastercard"></i>
+      <i class="fa-regular fa-credit-card-blank"></i>
+    </div>
+  </footer>
   <script src="JS/app.js"></script>
 </body>
 
