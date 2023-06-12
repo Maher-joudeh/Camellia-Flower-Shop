@@ -9,4 +9,3 @@ var typed = new Typed('.hero-heading', {
     loop:true
   });
 
-  
