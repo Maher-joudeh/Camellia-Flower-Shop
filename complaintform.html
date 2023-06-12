@@ -1,65 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>camellia shop</title>
     <script src="https://kit.fontawesome.com/f121993c04.js" crossorigin="anonymous"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style/complaintForm.css" />
+    <link rel="stylesheet" type="text/css" href="style/complaintForm.css">
 </head>
+
 <body>
     <header>
-        <div id="img1">
-          <img src="https://www3.0zz0.com/2023/06/07/21/466501860.png" />
+        <div class="container">
+            <!-- Navbar -->
+            <div class="navbar">
+                <div class="logo">
+                    <img src="Assets/homeImages/logo.png" alt="logo" class="img-logo">
+                </div>
+                <div class="tabs">
+                    <a href="./index.html" class="tab">Home</a>
+                    <a href="./shopping.html" class="tab">Shopping</a>
+                    <a href="./occasions.html" class="tab">Ocassions</a>
+                    <a href="./complaintform.html" class="tab">Contact</a>
+                    <a href="./cart.html" class="tab">Cart
+                        <i class="fa-solid fa-cart-shopping" style="color: #1F2321;"></i>
+                    </a>
+                </div>
+            </div>
+    </header>
+    <main>
+        <h1 class="conatct-header">Contact</h1>
+        <div class="contact-p">
+            <p class="p1">We are here to assist you!</p>
+            <p class="p2">Please complete the form below for your complaint</p>
         </div>
-        <div class="nav">
-          <a href="./index.html"> Home </a>
-          <a href="./shopping.html">Shopping</a>
-          <a href="./occasions.html">Occasion</a>
-          <a href="./complaintform.html">Contact</a>
-          <a href="./cart.html">Cart</a>
-          <i class="fa-solid fa-cart-shopping"></i>
-        </div>
-      </header>
-<main>
-    <p2></p2><br>
-    <p1>Contact</p>
-        <p3>We are here to assist you ! </p3><br>
-        <p2>Please complete the form below for your complaint</p2><br><br>
-       <div class="img1" ><img src="https://www7.0zz0.com/2023/06/07/22/513061025.png">
-       </div> 
-        <div class="rec"> <img src="https://www6.0zz0.com/2023/06/07/23/896860111.png">
-        </div> 
-        <div class="forms">
-            <form >
-                <label for="name"> Full Name </label><br>
-                <input type="text" id="name" style="height:50px; width:400px">
-             </form><br>
-             <form >
-                <label for="phone"> Phone number  </label><br>
-                <input type="text" id="phone" style="height:50px; width:400px">
-             </form><br>
-             <form >
-                <label for="emali"> Email</label><br>
-                <input type="email" id="emali" placeholder="your name@gmail.com" style="height:50px; width:400px">
-             </form><br>
-             <form >
-                <label for="com">The complaint</label><br>
-                <textarea id="w3review" name="w3review" rows="5" cols="52"></textarea>
-               
-             </form>
-             <form>
-              <input type="submit" style="height:30px; width:150px" >
-            </form>
-        </div> 
-    </main>
-<footer>
+        <div class="form-container">
+            <img src="Assets/occasionsImages/Occasion1.jpg" class="contact-img">
+            <div class="form">
+                <form>
+                    <label for="name"> Full Name </label><br>
+                    <input type="text" id="name" required placeholder="Enter your name ">
+                    <label for="phone"> Phone number </label>
 
-</footer>
+                    <input type="tel" id="phone" placeholder="079...  or  +96279..." required>
+                    <label for="email"> Email</label>
+                    <input type="email" id="email" placeholder="your name@gmail.com" required>
+                    <label for="com">The complaint</label><br>
+                    <textarea id="complaint" name="complaint" rows="8" cols="58"
+                        placeholder="Descripe your probelm in details..." required></textarea>
+
+                    <input type="submit" id="submitButton" value="Submit">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Privany Policy<br>
+            Terms & Conditions <br>
+            Amman-Jordan/Abdoun</p>
+        <p2>Camelliashop 2023 &copy All Rights Reserver</p2>
+        <div class="social-media">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fa-brands fa-whatsapp"></i> <br>
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <i class="fa-regular fa-credit-card-blank"></i>
+        </div>
+    </footer>
+    <script src="./JS/app3.js"></script>
 </body>
+
 </html>
