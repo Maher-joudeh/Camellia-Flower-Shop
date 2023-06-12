@@ -3,6 +3,8 @@ function render() {
   let json = window.localStorage.getItem("product");
   let parsedData = JSON.parse(json);
   const productInfo = document.querySelector('.product-info');
+
+
   if (parsedData && parsedData.length > 0) {
     for (let i = 0; i < parsedData.length; i++) {
       const product = parsedData[i];
@@ -133,10 +135,15 @@ function render() {
           productContainer.parentNode.removeChild(productContainer);
         }
       });
+      let Subtotal1 = 0;
+      Subtotal1 = Subtotal1 + product.price;
+  console.log(Subtotal1);
     }
+    
   } else {
     productInfo.textContent = 'Your cart is empty.';
   }
+  
 }
 const checkoutButton = document.querySelector('.checkout-card input[type="button"]');
 checkoutButton.addEventListener('click', () => {
@@ -149,4 +156,6 @@ checkoutButton.addEventListener('click', () => {
   const totalElement = document.querySelector('.total-p');
   totalElement.textContent = 'Subtotal for 0 items: 0.00 JD';
 });
+
+
 render();

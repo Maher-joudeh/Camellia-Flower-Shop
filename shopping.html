@@ -8,179 +8,200 @@
   <title>Camellia Flower Shop</title>
   <script src="https://kit.fontawesome.com/f121993c04.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style/occasions.css" />
+  <link rel="stylesheet" href="style/shopping.css" />
 </head>
 
-<body onload="filterSelection('all')">
+<body>
   <header>
-    <div class="logo" id="img1">
-      <img src="https://www3.0zz0.com/2023/06/07/21/466501860.png" />
-    </div>
-    <div class="nav">
-      <a href="./index.html"> Home </a>
-      <a href="./shopping.html">Shopping</a>
-      <a href="./occasions.html">Occasion</a>
-      <a href="./complaintform.html">Contact</a>
-      <a href="./cart.html">Cart <i class="fa-solid fa-cart-shopping"></i></a>
-    </div>
-  </header>
+    <div class="container">
+        <!-- Navbar -->
+        <div class="navbar">
+            <div class="logo">
+                <img src="Assets/homeImages/logo.png" alt="logo" class="img-logo">
+            </div>
+            <div class="tabs">
+                <a href="./index.html" class="tab">Home</a>
+                <a href="./shopping.html" class="tab">Shopping</a>
+                <a href="./occasions.html" class="tab">Ocassions</a>
+                <a href="./complaintform.html" class="tab">Contact</a>
+                <a href="./cart.html" class="tab">Cart
+                    <i class="fa-solid fa-cart-shopping" style="color: #1F2321;"></i>
+                </a>
+            </div>
+        </div>
+</header>
   <main>
     <div class="main-container">
       <div class="left-container">
-        <h1>Occasions</h1>
-        <p>Categories</p>
-        <div class="filters-card">
-          <form action="">
-            <div class="filter" onclick="filterSelection('all')">
-              <input class="filter-input" type="radio" id="All" name="Checked" />
-              <label class="filter-label" for="All">All</label><br />
-            </div>
-            <div class="filter" onclick="filterSelection('birthday')">
-              <input class="filter-input" type="radio" id="Birthday" name="Checked" />
-              <label class="filter-label" for="Birthday">Birthday</label><br />
-            </div>
-            <div class="filter" onclick="filterSelection('wedding')">
-              <input class="filter-input" type="radio" id="Wedding" name="Checked" />
-              <label class="filter-label" for="Wedding">Wedding</label><br />
-            </div>
-            <div class="filter" onclick="filterSelection('graduation')">
-              <input class="filter-input" type="radio" id="Graduation" name="Checked" />
-              <label class="filter-label" for="Graduation">Graduation</label><br />
-            </div>
-            <div class="filter" onclick="filterSelection('babyshower')">
-              <input class="filter-input" type="radio" id="Babyshower" name="Checked" />
-              <label class="filter-label" for="Babyshower">Babyshower</label><br />
-            </div>
-          </form>
+        <h1>Shopping</h1>
+
+        <div class="search">
+          <input type="text" placeholder="Search">
+          <button type="submit">Search</button>
         </div>
+        </form>
+      </div>
+
+    </div>
+
+    <div class="RL">
+      <div class="so">
+        <p> "Draw your own painting art by arranging your bouquet with our
+          diverse selection of flowers,Imagine the canvas of your bouquet taking
+          shape as you select flowers based on their colors, shapes, and meanings!" </p>
+        <p1> Note: You are purchasing by one piece of flower</p1>
       </div>
 
       <div class="right-container">
-        <p>Shop by occasions, send flowers and gifts</p>
+
         <div class="cards-container" id="cardsContainer">
-          <form id="form1">
-            <div class="flower-card" type="birthday">
-              <img class="cardImg" src="/Assets/occasionsImages/Occasion1.jpg" alt="flower" />
+          <form id="form10">
+            <div class="flower-card" type="Red">
+              <img class="cardImg" src="Assets/shoppingImages/Shooping1.jpg" alt="flower" />
               <div>
-                <div class="title">The flower of love</div>
+                <div class="title">Red Juri Flowers</div>
                 <div class="description">
-                  This elegant flower, devoid of pigmentation and bathed.
+                  Classic red roses, the timeless symbol of passionate love, make an ideal gift to celebrate
+                  anniversaries or express romantic gestures on Valentine's Day.
                 </div>
-                <div class="price">50 JD</div>
+                <div class="price">5 JD</div>
               </div>
               <button type="submit">Add to cart</button>
             </div>
           </form>
-          <form id="form2">
-          <div class="flower-card" type="birthday">
-            <img class="cardImg" src="/Assets/occasionsImages/Occasion2.jpg" alt="flower" />
-            <div>
-              <div class="title">The flower of love</div>
-              <div class="description">
-                This elegant flower, devoid of pigmentation and bathed.
+          <form id="form20">
+            <div class="flower-card" type="Pink">
+              <img class="cardImg" src="Assets/shoppingImages/Shooping2.jpg" alt="flower" />
+              <div>
+                <div class="title">Pink Juri flowers</div>
+                <div class="description">
+                  Delicate pink peonies, with their grace and charm, are perfect for expressing admiration, gratitude,
+                  and celebrating special friendships.
+                </div>
+                <div class="price">5 JD</div>
               </div>
-              <div class="price">50 JD</div>
+              <button type="submit">Add to cart</button>
             </div>
-            <button type="submit">Add to cart</button>
-          </div>
-        </form>
-        <form id="form3">
-          <div class="flower-card" type="graduation">
-            <img class="cardImg" src="/Assets/occasionsImages/Occasion3.jpg" alt="flower" />
-            <div>
-              <div class="title">The flower of love</div>
-              <div class="description">
-                This elegant flower, devoid of pigmentation and bathed.
+          </form>
+          <form id="form30">
+            <div class="flower-card" type="White">
+              <img class="cardImg" src="Assets/shoppingImages/Shooping3.jpg" alt="flower" />
+              <div>
+                <div class="title">White Juri Flowers</div>
+                <div class="description">
+                  Elegant white orchids embody purity and sophistication, making them a popular choice for weddings and
+                  as a symbol of remembrance.
+                </div>
+                <div class="price">5 JD</div>
               </div>
-              <div class="price">50 JD</div>
+              <button type="submit">Add to cart</button>
             </div>
-            <button type="submit">Add to cart</button>
-          </div>
-        </form>
-          <form id="form4">
-          <div class="flower-card" type="graduation">
-            <img class="cardImg" src="/Assets/occasionsImages/Occasion4.jpg" alt="flower" />
-            <div>
-              <div class="title">The flower of love</div>
-              <div class="description">
-                This elegant flower, devoid of pigmentation and bathed.
+          </form>
+          <form id="form40">
+            <div class="flower-card" type="Purple">
+              <img class="cardImg" src="Assets/shoppingImages/Shooping4.jpg" alt="flower" />
+              <div>
+                <div class="title">Purple Tulib Flowers</div>
+                <div class="description">
+                  Majestic purple irises evoke a sense of wonder and allure, making them a unique choice for expressing
+                  admiration, creativity, and spiritual connections.
+                </div>
+                <div class="price">5 JD</div>
               </div>
-              <div class="price">50 JD</div>
+              <button type="submit">Add to cart</button>
             </div>
-            <button type="submit">Add to cart</button>
-          </div>
-        </form>
-          <form id="form5">
-          <div class="flower-card" type="birthday">
-            <img class="cardImg" src="/Assets/occasionsImages/Occasion5.jpg" alt="flower" />
-            <div>
-              <div class="title">The flower of love</div>
-              <div class="description">
-                This elegant flower, devoid of pigmentation and bathed.
+          </form>
+          <form id="form50">
+            <div class="flower-card" type="Glowy Pink">
+              <img class="cardImg" src="Assets/shoppingImages/Shooping5.jpg" alt="flower" />
+              <div>
+                <div class="title">Glowy pink Flowers</div>
+                <div class="description">
+                  Delicate pink , with their grace and charm, are perfect for expressing admiration, gratitude, and
+                  celebrating special friendships.
+                </div>
+                <div class="price">5 JD</div>
               </div>
-              <div class="price">50 JD</div>
+              <button type="submit">Add to cart</button>
             </div>
-            <button type="submit">Add to cart</button>
-          </div>
-        </form>
-          <form id="form6">
-          <div class="flower-card" type="birthday">
-            <img class="cardImg" src="/Assets/occasionsImages/Occasion6.jpg" alt="flower" />
-            <div>
-              <div class="title">The flower of love</div>
-              <div class="description">
-                This elegant flower, devoid of pigmentation and bathed.
+          </form>
+          <form id="form60">
+            <div class="flower-card" type="Yellow">
+              <img class="cardImg" src="Assets/shoppingImages/Shooping6.jpg" alt="flower" />
+              <div>
+                <div class="title">Yellow Juri Flowers</div>
+                <div class="description">
+                  Vibrant yellow sunflowers, radiating joy and optimism, are a cheerful choice for birthdays,
+                  celebrations, and uplifting moments.
+                </div>
+                <div class="price">5 JD</div>
               </div>
-              <div class="price">50 JD</div>
+              <button type="submit">Add to cart</button>
             </div>
-            <button type="submit">Add to cart</button>
-          </div>
-        </form>
-          <form id="form7">
-          <div class="flower-card" type="birthday">
-            <img class="cardImg" src="/Assets/occasionsImages/Occasion7.jpg" alt="flower" />
-            <div>
-              <div class="title">The flower of love</div>
-              <div class="description">
-                This elegant flower, devoid of pigmentation and bathed.
+          </form>
+          <form id="form70">
+            <div class="flower-card" type="Light Purble">
+              <img class="cardImg" src="Assets/shoppingImages/Shooping7.jpg" alt="flower" />
+              <div>
+                <div class="title">Light Purble Flowers</div>
+                <div class="description">
+                  Majestic purple irises evoke a sense of wonder and allure, making them a unique choice for expressing
+                  admiration, creativity, and spiritual connections.
+                </div>
+                <div class="price">5 JD</div>
               </div>
-              <div class="price">50 JD</div>
+              <button type="submit">Add to cart</button>
             </div>
-            <button type="submit">Add to cart</button>
-          </div>
-        </form>
-          <form id="form8">
-          <div class="flower-card birthday" type="birthday">
-            <img class="cardImg" src="/Assets/occasionsImages/Occasion8.jpg" alt="flower" />
-            <div>
-              <div class="title">The flower of love</div>
-              <div class="description">
-                This elegant flower, devoid of pigmentation and bathed.
+          </form>
+          <form id="form80">
+            <div class="flower-card birthday" type="Orange">
+              <img class="cardImg" src="Assets/shoppingImages/Shooping8.jpg" alt="flower" />
+              <div>
+                <div class="title">Orange Juri Flowers</div>
+                <div class="description">
+                  Lively orange , bursting with energy and enthusiasm, are great for expressing excitement,
+                  congratulations, and appreciation.
+                </div>
+                <div class="price">5 JD</div>
               </div>
-              <div class="price">50 JD</div>
+              <button type="submit">Add to cart</button>
             </div>
-            <button type="submit">Add to cart</button>
-          </div>
-        </form>
-          <form id="form9">
-          <div class="flower-card birthday" type="birthday">
-            <img class="cardImg" src="/Assets/occasionsImages/Occasion9.jpg" alt="flower" />
-            <div>
-              <div class="title">The flower of love</div>
-              <div class="description">
-                This elegant flower, devoid of pigmentation and bathed.
+          </form>
+          <form id="form90">
+            <div class="flower-card birthday" type="Peach">
+              <img class="cardImg" src="Assets/shoppingImages/Shooping9.jpg" alt="flower" />
+              <div>
+                <div class="title">Peach Juri Flowers </div>
+                <div class="description">
+                  Peach flowers have a charming and subtle color that exudes a sense of grace and elegance.
+                </div>
+                <div class="price">5 JD</div>
               </div>
-              <div class="price">50 JD</div>
+              <button type="submit">Add to cart</button>
             </div>
-            <button type="submit">Add to cart</button>
-          </div>
-        </form>
+          </form>
         </div>
       </div>
     </div>
+
+    
   </main>
-  <footer></footer>
-  <script src="JS/app.js"></script>
+  <footer>
+    <p>Privany Policy<br>
+      Terms & Conditions <br>
+      Amman-Jordan/Abdoun</p>
+    <p2>Camelliashop 2023 &copy All Rights Reserver</p2>
+    <div class="social-media">
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-linkedin"></i>
+      <i class="fa-brands fa-whatsapp"></i> <br>
+      <i class="fa-brands fa-cc-visa"></i>
+      <i class="fa-brands fa-cc-mastercard"></i>
+      <i class="fa-regular fa-credit-card-blank"></i>
+    </div>
+  </footer>
+  <script src="JS/app0.js"></script>
 </body>
 
 </html>
