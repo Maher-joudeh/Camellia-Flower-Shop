@@ -5,6 +5,7 @@ submit.addEventListener('click', () => {
     let phone = document.getElementById('phone')
     let email = document.getElementById('email')
     let complaint = document.getElementById('complaint')
+
     
         if (name.value == false) {
             alert('Please enter a valid name');
@@ -18,6 +19,7 @@ submit.addEventListener('click', () => {
             alert('All your information is sent, we will contact you soon..');
         }
     
+
 
 
 })
