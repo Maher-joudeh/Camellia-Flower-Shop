@@ -17,7 +17,7 @@ body {
 .container {
     width: 120%;
     height: 600px;
-    background: url("/Assets/homeImages/hero.png");
+    
     margin-top: -8px;
     margin-left: -7px;
 }
