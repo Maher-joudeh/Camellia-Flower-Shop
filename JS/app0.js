@@ -1,5 +1,8 @@
 'use strict'
+
+
 filterSelection('all');
+
 function filterSelection(c) {
 var cards = document.getElementsByClassName("flower-card");
 if (c == "all") c = "";
@@ -10,21 +13,31 @@ for ( var i = 0; i < cards.length; i++) {
   }
 }
 }
+
 let bouquetArray = [];
 let jsonArray = window.localStorage.getItem("product");
 let oldCheckArray = JSON.parse(jsonArray);
+
 if (oldCheckArray != null) {
+  
   bouquetArray = oldCheckArray
+  
 }
+
 function bouquet(id, Name, price,  image,  description) {
     this.id = id;
     this.Name = Name;
     this.price = price;
     this.description = description;
     this.image = image;
+    
+    
     bouquetArray.push(this);
 };
+
 let bouquets = document.getElementById('cardsContainer');
+
+
 let i10 = 0;
 let i20 = 0;
 let i30 = 0;
@@ -34,8 +47,10 @@ let i60 = 0;
 let i70 = 0;
 let i80 = 0;
 let i90 = 0;
+
 let saveValues10 = document.getElementById('form10');
 saveValues10.addEventListener('submit', handler10)
+
 function handler10(e) {
   e.preventDefault();
 if (i10 == 0) {
@@ -45,6 +60,7 @@ if (i10 == 0) {
   i10++;
 }
 };
+
 function storeIntoLocalStorage() {
     // let x = window.localStorage.getItem("product");
     // console.log('x = ', x);
@@ -53,8 +69,11 @@ function storeIntoLocalStorage() {
     let jsonObjArray = JSON.stringify(bouquetArray);
   window.localStorage.setItem("product", jsonObjArray);
 }
+
+
 let saveValues20 = document.getElementById('form20');
 saveValues20.addEventListener('submit', handler20)
+
 function handler20(e) {
   e.preventDefault();
   if (i20 == 0) {
@@ -64,8 +83,11 @@ function handler20(e) {
     i20++;
   }
 };
+
+
 let saveValues30 = document.getElementById('form30');
 saveValues30.addEventListener('submit', handler30)
+
 function handler30(e) {
   e.preventDefault();
   if (i30 == 0) {
@@ -76,8 +98,10 @@ function handler30(e) {
   }
 };
 
+
 let saveValues40 = document.getElementById('form40');
 saveValues40.addEventListener('submit', handler40)
+
 function handler40(e) {
   e.preventDefault();
   if (i40 == 0) {
@@ -87,8 +111,11 @@ function handler40(e) {
     i40++;
   }
 };
+
+
 let saveValues50 = document.getElementById('form50');
 saveValues50.addEventListener('submit', handler50)
+
 function handler50(e) {
   e.preventDefault();
   if (i50 == 0) {
@@ -98,8 +125,11 @@ function handler50(e) {
     i50++;
   }
 };
+
+
 let saveValues60 = document.getElementById('form60');
 saveValues60.addEventListener('submit', handler60)
+
 function handler60(e) {
   e.preventDefault();
   if (i60 == 0) {
@@ -109,8 +139,11 @@ function handler60(e) {
     i60++;
   }
 };
+
+
 let saveValues70 = document.getElementById('form70');
 saveValues70.addEventListener('submit', handler70)
+
 function handler70(e) {
   e.preventDefault();
   if (i70 == 0) {
@@ -120,8 +153,11 @@ function handler70(e) {
     i70++;
   }
 };
+
+
 let saveValues80 = document.getElementById('form80');
 saveValues80.addEventListener('submit', handler80)
+
 function handler80(e) {
   e.preventDefault();
   if (i80 == 0) {
@@ -131,8 +167,11 @@ function handler80(e) {
     i80++;
   }
 };
+
+
 let saveValues90 = document.getElementById('form90');
 saveValues90.addEventListener('submit', handler90)
+
 function handler90(e) {
   e.preventDefault();
   if (i90 == 0) {
@@ -142,3 +181,5 @@ function handler90(e) {
     i90++;
   }
 };
+
+

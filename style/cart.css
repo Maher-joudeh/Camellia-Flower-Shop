@@ -297,7 +297,10 @@ footer p2 {
     background-color: #D0627F;
 }
 
-
+.total {
+    display: flex;
+    
+}
 
 
 

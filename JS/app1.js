@@ -1,9 +1,11 @@
 'use strict';
+let Subtotal1 = 0;
+let Subtotal2 = 0;
 function render() {
   let json = window.localStorage.getItem("product");
   let parsedData = JSON.parse(json);
   const productInfo = document.querySelector('.product-info');
-
+ 
 
   if (parsedData && parsedData.length > 0) {
     for (let i = 0; i < parsedData.length; i++) {
@@ -80,6 +82,14 @@ function render() {
         }
         productPrice.textContent = `Total : ${total} JD`;
         quantityNumber.textContent = quantity;
+if (Subtotal2 == 50) {
+  Subtotal2 = Subtotal1 + Subtotal2 + product.total
+        
+}else {
+  Subtotal2 = Subtotal2 + product.total
+  console.log('total', Subtotal2);
+}
+        
       });
       removeButton.addEventListener('click', (e) => {
         e.preventDefault();
@@ -135,9 +145,13 @@ function render() {
           productContainer.parentNode.removeChild(productContainer);
         }
       });
-      let Subtotal1 = 0;
-      Subtotal1 = Subtotal1 + product.price;
-  console.log(Subtotal1);
+
+      
+      
+      Subtotal1 = Subtotal1 + product.price
+      
+      console.log('first', Subtotal1);
+      
     }
     
   } else {
