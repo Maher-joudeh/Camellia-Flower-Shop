@@ -150,16 +150,18 @@ label{
     color: red;
 }
 
-.flower-card button{
+.button1{
     background: #667055;
     color: white;
     border-radius: 50px;
     border: none;
     padding: 10px; 
     margin-top: 10px;   
+    width: 40%;
+    height: 40px;
 }
 
-.flower-card button:hover {
+.button1:hover {
     background-color: #F9DDDF; /* Green */
     color: black;
   }
@@ -256,3 +258,148 @@ footer p2 {
     margin-top: -7px;
     overflow-y: unset;
 }
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .popup-content {
+    background-color: #F9DDDF;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .close1 {
+    color: #aaa;
+    float: right;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .close1:hover,
+  .close1:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .close2 {
+    color: #aaa;
+    float: right;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .close2:hover,
+  .close2:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .close3 {
+    color: #aaa;
+    float: right;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .close3:hover,
+  .close3:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .close4 {
+    color: #aaa;
+    float: right;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .close4:hover,
+  .close4:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .close5 {
+    color: #aaa;
+    float: right;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .close5:hover,
+  .close5:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .close6 {
+    color: #aaa;
+    float: right;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .close6:hover,
+  .close6:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .close7 {
+    color: #aaa;
+    float: right;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .close7:hover,
+  .close7:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .close8 {
+    color: #aaa;
+    float: right;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .close8:hover,
+  .close8:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }

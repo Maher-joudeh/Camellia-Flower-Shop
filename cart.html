@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,11 +10,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style/cart.css" />
 </head>
+
 <body>
   <!-- Navbar -->
   <header>
     <div class="navbar">
-        <img src="Assets/homeImages/logo.png" alt="logo" class="img-logo">
+      <img src="Assets/homeImages/logo.png" alt="logo" class="img-logo">
       <div class="tabs">
         <a href="./index.html" class="tab">Home</a>
         <a href="./shopping.html" class="tab">Shopping</a>
@@ -31,12 +33,12 @@
     <div class="cart">
       <p1 class="your-cart">Your cart</p1>
       <div class="product-info">
-           <!-- <img src="" class="product-img">
+        <!-- <img src="" class="product-img">
           <h3 class="product-name"></h3>
           <p class="product-description"></p>
           <p class="product-price">Total :</p> -->
-        </div>
-<!--  --> <!--  --> <!--  --> <!--  -->
+      </div>
+      <!--  --> <!--  --> <!--  --> <!--  -->
       <!-- <div class="add-remove-btn">
           <a href="#" class="add">
             <i class="fa-regular fa-plus"></i>
@@ -54,12 +56,20 @@
         <textarea placeholder="Send your flowers with love..."></textarea>
         <p class="textarea-p">Maximium 22 charachter</p>
       </div>
-      <div  class="checkout-card">
-        <div  class="total">
-        <p class="total-p">Subtotal for  items:  </p>
-        <div id="total"> 527 JD</div>
-      </div>
-        <input type="button" value="Checkout" />
+      <div class="checkout-card">
+        <div class="total">
+          <p class="total-p">Subtotal for items: </p>
+
+        </div>
+        
+        <input type="button" value="Checkout" id="popupButton"></input>
+        <div id="popup" class="popup">
+          <div class="popup-content">
+            <span class="close">&times;</span>
+            <p>Checkout successful! Thank you for your purchase.</p>
+          </div>
+        </div>
+        
         <p class="pay-p">We Accept:</p><br>
         <img src="Assets/cartImages/payment.png" alt="payment" class="pay-img">
       </div>
@@ -72,19 +82,22 @@
   </main>
   <footer>
     <p>Privany Policy<br>
-        Terms & Conditions <br>
-        Amman-Jordan/Abdoun</p>
+      Terms & Conditions <br>
+      Amman-Jordan/Abdoun</p>
     <p2>Camelliashop 2023 &copy All Rights Reserver</p2>
     <div class="social-media">
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-linkedin"></i>
-        <i class="fa-brands fa-whatsapp"></i> <br>
-        <i class="fa-brands fa-cc-visa"></i>
-        <i class="fa-brands fa-cc-mastercard"></i>
-        <i class="fa-regular fa-credit-card-blank"></i>
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-linkedin"></i>
+      <i class="fa-brands fa-whatsapp"></i> <br>
+      <i class="fa-brands fa-cc-visa"></i>
+      <i class="fa-brands fa-cc-mastercard"></i>
+      <i class="fa-regular fa-credit-card-blank"></i>
     </div>
-</footer>
+
+
+  </footer>
   <script src="./JS/app1.js"></script>
 </body>
+
 </html>

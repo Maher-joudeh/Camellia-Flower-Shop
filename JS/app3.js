@@ -5,21 +5,22 @@ submit.addEventListener('click', () => {
     let phone = document.getElementById('phone')
     let email = document.getElementById('email')
     let complaint = document.getElementById('complaint')
-
     
         if (name.value == false) {
-            alert('Please enter a valid name');
+            
         } else if (phone.value == false) {
-            alert('Please enter a valid phone');
+            
         }else if(email.value == false) {
-            alert('Please enter a valid email');
+            
         }else if(complaint.value == false) {
-            alert('Please enter a valid complaint');
+            
         }else{
             alert('All your information is sent, we will contact you soon..');
         }
     
 
 
-
 })
+
+
+
