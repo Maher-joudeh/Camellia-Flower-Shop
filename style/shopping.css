@@ -148,7 +148,7 @@ label{
 .right-container{
     width: 70%;
     
-    margin: 0;
+    
 }
 
 .right-container p{
@@ -162,11 +162,19 @@ label{
     margin: 0;
 }
 
+.right-container h2 {
+    margin-left: 250px;
+    
+    top: 150px;
+    position: absolute;
+}
+
 .cards-container{
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
     padding-inline-start: 20px;
+    
     
 }
 

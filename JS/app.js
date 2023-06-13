@@ -40,12 +40,13 @@ if (oldCheckArray != null) {
 }
 
 
-function bouquet(Name, description, price, image,  id) {
+function bouquet(Name, description, price, image,  id, total) {
     this.id = id;
     this.Name = Name;
     this.price = price;
     this.description = description;
     this.image = image;
+    this.total = total;
     
     
     bouquetArray.push(this);
@@ -73,7 +74,7 @@ saveValues1.addEventListener('submit', handler1)
 function handler1(e) {
   e.preventDefault();
 if (i1 == 0) {
-  new bouquet("Bed of Roses", "This tied bouquet has 15 purple roses", 50, "Assets/occasionsImages/Occasion1.jpg", "Birthday" );
+  new bouquet("Bed of Roses", "This tied bouquet has 15 purple roses", 50, "Assets/occasionsImages/Occasion1.jpg", "Birthday", 50 );
   console.log(bouquetArray);
   storeIntoLocalStorage();
   i1++;
@@ -97,7 +98,7 @@ saveValues2.addEventListener('submit', handler2)
 function handler2(e) {
   e.preventDefault();
   if (i2 == 0) {
-    new bouquet("The flower of love", "This elegant flower, devoid of pigmentation and bathed", 50, "Assets/occasionsImages/Occasion2.jpg", "Birthday");
+    new bouquet("The flower of love", "This elegant flower, devoid of pigmentation and bathed", 50, "Assets/occasionsImages/Occasion2.jpg", "Birthday", 50);
     console.log(bouquetArray);
     storeIntoLocalStorage();
     i2++;
@@ -111,7 +112,7 @@ saveValues3.addEventListener('submit', handler3)
 function handler3(e) {
   e.preventDefault();
   if (i3 == 0) {
-    new bouquet("Royal Scents Roses Arrangement", "Flowers can say it all when you are speechless.", 50, "Assets/occasionsImages/Occasion3.jpg", "Birthday");
+    new bouquet("Royal Scents Roses Arrangement", "Flowers can say it all when you are speechless.", 50, "Assets/occasionsImages/Occasion3.jpg", "Birthday", 50);
     console.log(bouquetArray);
     storeIntoLocalStorage();
     i3++;
@@ -125,7 +126,7 @@ saveValues4.addEventListener('submit', handler4)
 function handler4(e) {
   e.preventDefault();
   if (i4 == 0) {
-    new bouquet("Pink Oriental Blooms", "Pink Oriental Blooms Bouquet to someone special and give them an eye-catching.", 50, "Assets/occasionsImages/Occasion4.jpg", "Birthday");
+    new bouquet("Pink Oriental Blooms", "Pink Oriental Blooms Bouquet to someone special and give them an eye-catching.", 50, "Assets/occasionsImages/Occasion4.jpg", "Birthday", 50);
     console.log(bouquetArray);
     storeIntoLocalStorage();
     i4++;
@@ -139,7 +140,7 @@ saveValues5.addEventListener('submit', handler5)
 function handler5(e) {
   e.preventDefault();
   if (i5 == 0) {
-    new bouquet("The Magician Flower", "The Magician Flower Bouquet is a beautiful bright gift that will make their heart skip a beat!.", 50, "Assets/occasionsImages/Occasion5.jpg", "Birthday");
+    new bouquet("The Magician Flower", "The Magician Flower Bouquet is a beautiful bright gift that will make their heart skip a beat!.", 50, "Assets/occasionsImages/Occasion5.jpg", "Birthday", 50);
     console.log(bouquetArray);
     storeIntoLocalStorage();
     i5++;
@@ -153,7 +154,7 @@ saveValues6.addEventListener('submit', handler6)
 function handler6(e) {
   e.preventDefault();
   if (i6 == 0) {
-    new bouquet("12 Red Roses Romantic Bouquet", "This bouquet is perfect for an anniversary, or just to show how much you love them!", 50, "Assets/occasionsImages/Occasion6.jpg", "Birthday");
+    new bouquet("12 Red Roses Romantic Bouquet", "This bouquet is perfect for an anniversary, or just to show how much you love them!", 50, "Assets/occasionsImages/Occasion6.jpg", "Birthday", 50);
     console.log(bouquetArray);
     storeIntoLocalStorage();
     i6++;
@@ -167,7 +168,7 @@ saveValues7.addEventListener('submit', handler7)
 function handler7(e) {
   e.preventDefault();
   if (i7 == 0) {
-    new bouquet("The Powerful One", "A gorgeous bouquet of flowers including spray roses.", 50, "Assets/occasionsImages/Occasion7.jpg", "Birthday");
+    new bouquet("The Powerful One", "A gorgeous bouquet of flowers including spray roses.", 50, "Assets/occasionsImages/Occasion7.jpg", "Birthday", 50);
     console.log(bouquetArray);
     storeIntoLocalStorage();
     i7++;
@@ -181,7 +182,7 @@ saveValues8.addEventListener('submit', handler8)
 function handler8(e) {
   e.preventDefault();
   if (i8 == 0) {
-    new bouquet("Amour Flowers Bouquet", "A stunning bouquet of flowers! it is the best gift for all occasions.", 50, "Assets/occasionsImages/Occasion8.jpg", "Birthday");
+    new bouquet("Amour Flowers Bouquet", "A stunning bouquet of flowers! it is the best gift for all occasions.", 50, "Assets/occasionsImages/Occasion8.jpg", "Birthday", 50);
     console.log(bouquetArray);
     storeIntoLocalStorage();
     i8++;
@@ -195,7 +196,7 @@ saveValues9.addEventListener('submit', handler9)
 function handler9(e) {
   e.preventDefault();
   if (i9 == 0) {
-    new bouquet("The White Fantasy", "This elegant flower, 6 white roses and gypsophila.", 50, "Assets/occasionsImages/Occasion9.jpg", "Birthday");
+    new bouquet("The White Fantasy", "This elegant flower, 6 white roses and gypsophila.", 50, "Assets/occasionsImages/Occasion9.jpg", "Birthday", 50);
     console.log(bouquetArray);
     storeIntoLocalStorage();
     i9++;
