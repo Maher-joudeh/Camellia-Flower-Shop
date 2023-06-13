@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;600;700&family=Sail&display=swap');
+:root {
+    --main-color: rgba(0, 0, 0, 0.63);
+    --secondry-color: #838971;
+    --nav-color: #FED0DC;
+}
+* {
+    font-family: 'Ruda', sans-serif;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #F4EBE2;
+    overflow-x: hidden;
+}
+.container {
+    width: 120%;
+    height: 600px;
+    margin-top: -8px;
+    margin-left: -7px;
+}
+.img-logo {
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    top: -25px;
+    left: 50px;
+}
+.tabs {
+    position: absolute;
+    width: 629px;
+    height: 31px;
+    right: 10px;
+    top: 40px;
+}
+.tab {
+    padding-right: 50px;
+    color: black;
+    text-decoration: none;
+}
+.navbar .tabs a:hover {
+    text-transform: uppercase;
+    color: white;
+}
+.navbar {
+    margin-top: -7px;
+    overflow-y: unset;
+}
+.hero-heading {
+    position: absolute;
+    left: 138px;
+    top: 115px;
+    font-family: 'Sail', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    color: #F6ECE0;
+}
+.hero-desc {
+    position: absolute;
+    left: 245px;
+    top: 200px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.4;
+    color: #ECEDE9;
+}
+.hero-desc2 {
+    position: absolute;
+    width: 340px;
+    height: 24px;
+    left: 244px;
+    top: 390px;
+    font-family: 'Ruda';
+    font-weight: 600;
+    font-size: 18px;
+    color: #ECEDE9;
+}
+.shop-btn {
+    position: absolute;
+    width: 140px;
+    height: 40px;
+    left: 244px;
+    top: 480px;
+    border-radius: 5px;
+    background: #838971;
+    color: #FFFFFF;
+    font-family: 'Ruda';
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+}
+.container2 {
+    display: flex;
+    width: 400px;
+    align-items: center;
+    margin-left: 580px;
+    margin-top: 30px;
+}
+.line {
+    flex-grow: 1;
+    height: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: var(--main-color);
+}
+.text {
+    font-size: 32px;
+    color: var(--main-color);
+}
+.about-p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    color: var(--main-color);
+}
+input {
+    margin-left: 245px;
+    margin-top: 460px;
+    width: 145px;
+    height: 49px;
+    background-color: var(--secondry-color);
+    color: #FFFFFF;
+    border-radius: 7px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+/* comments */
+.card .image {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    background: #fff;
+}
+.card .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #DFB6B6;
+}
+.card {
+    display: inline-block;
+    /* position:relative;*/
+    background: #D1B5B5;
+    border-radius: 20px;
+    /* margin:20px; */
+    width: 300px;
+    margin-left: 160px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.card .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+    z-index: 100;
+}
+.card .media-icons {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card .media-icons i {
+    color: #FFFFFF;
+    opacity: 0.6;
+    margin-top: 10px;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+.card .media-icons i:hover {
+    opacity: 1;
+}
+.card .name-profession {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    color: var(--main-color);
+}
+.name-profession .name {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--main-color);
+}
+.card .rating {
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+}
+.card .rating i {
+    font-size: 18px;
+    color: #667055;
+}
+/* footer */
+footer {
+    background-color: #838971;
+    height: 100px;
+    width: 1550px;
+    margin-left: -20px;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: inherit;
+    overflow: auto;
+    justify-items: center;
+    align-items: center;
+}
+footer p {
+    margin-left: 150px;
+    font-family: Roboto;
+    font-size: 19px;
+}
+footer p2 {
+    margin-left: 230px;
+    font-family: Roboto;
+    font-size: 19px;
+    margin-bottom: -50px;
+}
+.social-media {
+    margin-top: 0px;
+    margin-left: 300px;
+}
+.social-media i {
+    font-size: 29px;
+    margin: 10px;
+    cursor: pointer;
+    color: rgb(228, 239, 249);
+}
+.social-media i:hover {
+    transform: translate(0, -10px);
+}
+.social-media:nth-child(1) i:hover {
+    background-color: #D0627F;
+}
+.social-media:nth-child(2) i:hover {
+    background-color: #D0627F;
+}
+.social-media:nth-child(3) i:hover {
+    background-color: #D0627F;
+}
+.social-media:nth-child(4) i:hover {
+    background-color: #D0627F;
+}
+.flower-card{
+    display: none;
+    background-color: white;
+    border-radius: 50px;
+    text-align: center;
+    padding-bottom: 25px;
+    max-width: 250px;
+    box-shadow: 0px 0px 30px #00000033;
+    margin-bottom: 50px;
+    height: 370px;
+}
+.flower-card.show{
+    display: block;
+}
+.flower-card .cardImg{
+    width: 250px;
+    height: 250px;
+    border-radius: 50px 50px 0px 0px;
+}
+.flower-card .title , .flower-card .price{
+    color: red;
+    margin-top: 7px;
+}
+.flower-card button{
+    background: #667055;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+}
+.flower-card button:hover {
+    background-color: #F9DDDF; /* Green */
+    color: black;
+  }
+  .cards-container{
+    margin-top: 50px;
+    margin-left: 120px;
+    display: flex;
+    gap: 90px;
+    flex-wrap: wrap;
+    padding-inline-start: 20px;
+}
+.a11 {
+    position: absolute;
+    right: 79.1%;
+    top: 141.5%;
+    width: 100px;
+}
+.a1 {
+    color: #667055;
+}
+.a1:hover {
+    color: #A97878;
+}
+.a22 {
+    position: absolute;
+    right: 56.7%;
+    top: 141.5%;
+    width: 100px;
+    color: #667055;
+}
+.a2 {
+    color: #667055;
+}
+.a2:hover {
+    color: #A97878;
+}
+.a33 {
+    position: absolute;
+    right: 34.3%;
+    top: 141.5%;
+    width: 100px;
+    color: #667055;
+}
+.a3 {
+    color: #667055;
+}
+.a3:hover {
+    color: #A97878;
+}
+.a44 {
+    position: absolute;
+    right: 11.9%;
+    top: 141.5%;
+    width: 100px;
+    color: #667055;
+}
+.a4 {
+    color: #667055;
+}
+.a4:hover {
+    color: #A97878;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
