@@ -1,5 +1,4 @@
 'use strict'
-
 //Home Page:
 var typed = new Typed('.hero-heading', {
     strings: [ 'Welcome to Camellia'],
@@ -8,9 +7,7 @@ var typed = new Typed('.hero-heading', {
     backDelay: 1000,
     loop:true
   });
-
   filterSelection('all');
-
 function filterSelection(c) {
 var cards = document.getElementsByClassName("flower-card");
 if (c == "all") c = "";
