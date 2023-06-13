@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;600;700&family=Sail&display=swap');
+
+* {
+    text-decoration: none;
+    font-family: 'Ruda', sans-serif;
+}
+
+body{
+    background-color:#F4EBE2 ;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color:#F9DDDF ;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    
+}
+
+header img{
+    max-width: 400px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;}
+
+.nav a{
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    justify-items: center;
+    align-items: center;
+}
+
+label{
+  font-size: 25px;
+}
+
+.img1{
+    width: 498px;
+    height: 798px;
+    margin-left: 820px;
+}
+
+/* MAIN PAGE CONTAINER */
+
+.main-container{
+    display: flex;
+}
+
+/* LEFT CONTAINER */
+
+.left-container{
+    width: 30%;
+    padding-inline: 35px;
+}
+
+.left-container h1{
+    font-weight: 400;
+    font-size: 42px;
+    color: rgba(0, 0, 0, 0.63);
+    padding-block: 50px;
+    margin: 0;
+    text-align: center;
+}
+
+.left-container p{
+    font-weight: 400;
+    font-size: 24px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0 0 30px 0;
+    color: rgba(0, 0, 0, 0.63);
+    text-align: center;
+    padding-block: 5px;
+}
+
+.filters-card{
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.filters-card form{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.filters-card .filter{
+    background: rgba(218, 218, 220, 0.41);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* RIGHT CONTAINER */
+
+.right-container{
+    width: 70%;
+    
+    margin: 0;
+}
+
+.right-container p{
+    font-weight: 400;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.63);
+    text-align: center;
+    width: 100%;
+    display: block;
+    padding-block: 60px;
+    margin: 0;
+}
+
+.cards-container{
+    display: flex;
+    gap: 90px;
+    flex-wrap: wrap;
+    padding-inline-start: 20px;
+}
+
+.flower-card{
+    display: none;
+    background-color: white;
+    border-radius: 50px;
+    text-align: center;
+    padding-bottom: 25px;
+    max-width: 250px;
+    box-shadow: 0px 0px 30px #00000033;
+    margin-bottom: 50px;
+}
+
+.flower-card.show{
+    display: block;
+}
+
+.flower-card .cardImg{
+    width: 250px;
+    height: 250px;
+    border-radius: 50px 50px 0px 0px;
+}
+
+.flower-card .title , .flower-card .price{
+    color: red;
+}
+
+.flower-card button{
+    background: #667055;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    padding: 10px; 
+    margin-top: 10px;   
+}
+
+.flower-card button:hover {
+    background-color: #F9DDDF; /* Green */
+    color: black;
+  }
+
+  /* footer */
+footer {
+    background-color: #838971;
+    width: 1539px;
+    margin-left: -20px;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: inherit;
+    overflow: auto;
+    justify-items: center;
+    align-items: center;
+}
+
+footer p {
+    margin-left: 150px;
+    font-family: Roboto;
+    font-size: 19px;
+}
+
+footer p2 {
+    margin-left: 230px;
+    font-family: Roboto;
+    font-size: 19px;
+    margin-bottom: -50px;
+}
+
+.social-media {
+    margin-top: 0px;
+    margin-left: 300px;
+}
+
+.social-media i {
+    font-size: 29px;
+    margin: 10px;
+    cursor: pointer;
+    color: rgb(228, 239, 249);
+}
+
+.social-media i:hover {
+    transform: translate(0, -10px);
+}
+
+.social-media:nth-child(1) i:hover {
+    background-color: #D0627F;
+}
+
+.social-media:nth-child(2) i:hover {
+    background-color: #D0627F;
+}
+
+.social-media:nth-child(3) i:hover {
+    background-color: #D0627F;
+}
+
+.social-media:nth-child(4) i:hover {
+    background-color: #D0627F;
+}
+
+.img-logo {
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    top: -25px;
+    left: 50px;
+}
+
+.tabs {
+    position: absolute;
+    width: 629px;
+    height: 31px;
+    right: 10px;
+    top: 40px;
+}
+
+.tab {
+    padding-right: 50px;
+    color: black;
+    text-decoration: none;
+}
+
+.navbar .tabs a:hover {
+    text-transform: uppercase;
+    color: white;
+}
+
+.navbar {
+    background-color: #F9DDDF;
+    height: 90px;
+    margin-top: -7px;
+    overflow-y: unset;
+}
