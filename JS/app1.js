@@ -1,12 +1,14 @@
 'use strict';
-let Subtotal1 = 0;
-let Subtotal2 = 0;
+let subtotal = 0;
+function updateSubtotal(amount) {
+    subtotal += amount;
+    const totalElement = document.querySelector('.total-p');
+    totalElement.textContent = `Subtotal for items: ${subtotal.toFixed(2)} JD`;
+  }
 function render() {
   let json = window.localStorage.getItem("product");
   let parsedData = JSON.parse(json);
   const productInfo = document.querySelector('.product-info');
- 
-
   if (parsedData && parsedData.length > 0) {
     for (let i = 0; i < parsedData.length; i++) {
       const product = parsedData[i];
@@ -58,6 +60,7 @@ function render() {
       productDetails.appendChild(trashButton);
       productContainer.appendChild(productDetails);
       productInfo.appendChild(productContainer);
+      subtotal += product.price;
       /////////////////////////////////////////////////
       let quantity = 1;
       addButton.addEventListener('click', (e) => {
@@ -80,16 +83,9 @@ function render() {
           }
           window.localStorage.setItem("product", JSON.stringify(parsedData));
         }
-        productPrice.textContent = `Total : ${total} JD`;
+        productPrice.textContent = `Total: ${total.toFixed(2)} JD`;
         quantityNumber.textContent = quantity;
-if (Subtotal2 == 50) {
-  Subtotal2 = Subtotal1 + Subtotal2 + product.total
-        
-}else {
-  Subtotal2 = Subtotal2 + product.total
-  console.log('total', Subtotal2);
-}
-        
+        updateSubtotal(parseFloat(product.price));
       });
       removeButton.addEventListener('click', (e) => {
         e.preventDefault();
@@ -114,6 +110,7 @@ if (Subtotal2 == 50) {
           }
           productPrice.textContent = `Total: $${total}`;
           quantityNumber.textContent = quantity;
+          updateSubtotal(-parseFloat(product.price)); // Decrease subtotal
         } else {
           let json = window.localStorage.getItem("product");
           let parsedData = JSON.parse(json);
@@ -127,6 +124,10 @@ if (Subtotal2 == 50) {
             window.localStorage.setItem("product", JSON.stringify(parsedData));
           }
           productContainer.remove();
+          updateSubtotal(-parseFloat(product.price)); // Decrease subtotal
+          if (subtotal === 0) {
+            updateSubtotal(0); // Set subtotal to zero
+          }
         }
       });
       trashButton.addEventListener('click', () => {
@@ -143,21 +144,18 @@ if (Subtotal2 == 50) {
         }
         if (productContainer.parentNode) {
           productContainer.parentNode.removeChild(productContainer);
+          updateSubtotal(-parseFloat(product.price)); // Decrease subtotal
         }
       });
-
-      
-      
-      Subtotal1 = Subtotal1 + product.price
-      
-      console.log('first', Subtotal1);
-      
+  //     let Subtotal1 = 0;
+  //     Subtotal1 = Subtotal1 + product.price;
+  // console.log(Subtotal1);
     }
-    
   } else {
     productInfo.textContent = 'Your cart is empty.';
   }
-  
+  const totalElement = document.querySelector('.total-p');
+  totalElement.textContent = `Subtotal for items: ${subtotal.toFixed(2)} JD`;
 }
 const checkoutButton = document.querySelector('.checkout-card input[type="button"]');
 checkoutButton.addEventListener('click', () => {
@@ -166,10 +164,22 @@ checkoutButton.addEventListener('click', () => {
   while (productInfo.firstChild) {
     productInfo.removeChild(productInfo.firstChild);
   }
-  alert('Checkout successful! Thank you for your purchase.');
+  // alert('Checkout successful! Thank you for your purchase.');
   const totalElement = document.querySelector('.total-p');
   totalElement.textContent = 'Subtotal for 0 items: 0.00 JD';
+  subtotal = 0; // Reset the subtotal to zero
+  updateSubtotal(-subtotal);
 });
-
-
 render();
+
+let popup = document.getElementById("popup");
+let button = document.getElementById("popupButton");
+let close = document.getElementsByClassName("close")[0];
+function openPopup() {
+  popup.style.display = "block";
+}
+function closePopup() {
+  popup.style.display = "none";
+}
+button.addEventListener("click", openPopup);
+close.addEventListener("click", closePopup);
