@@ -2,12 +2,13 @@
 
 ## Team Members:
 Ayham Bani Yasin <br>
-Eman Whibi <br>
+Maher Joudeh <br>
 Sadrah Alsabagh <br>
 Ayat Ayman <br>
 Hadeel Abuzayed <br>
 Osama Ghanrm <br>
-Maher Joudeh
+Eman Whibi
+
 
 ## Summary of Idea:
 Our concept revolves around a professional flower shop, that features five pages: Home page, Shopping page, Occasions page (offering special occasion bouquets and exclusive offers, such as those tailored for Mother's Day), Complaint Form, and Cart Page. The Cart Page offers a unique feature allowing customers to select multiple flower types, personalize them into a beautiful bouquet, and even add a thoughtful gift message during the checkout process.
